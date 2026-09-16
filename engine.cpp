@@ -182,9 +182,6 @@ void engine_update_particles() {
     }
 }
 
-// Returns packed data: [snake_x0, snake_y0, snake_x1, snake_y1, ..., -1, food_x, food_y, score, game_over, direction,
-//                       num_particles, (px, py, life, r, g, b, size)*num_particles,
-//                       num_trail, (tx, ty)*num_trail]
 int engine_get_state(float* out_snake, int* out_snake_len,
                      float* out_food, int* out_score, int* out_game_over, int* out_direction,
                      float* out_particles, int* out_particle_count,
@@ -225,4 +222,4 @@ int engine_get_state(float* out_snake, int* out_snake_len,
     return 0;
 }
 
-} // extern "C"
+} 
